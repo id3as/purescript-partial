@@ -1,5 +1,5 @@
 % module Partial.Unsafe
 -module(partial_unsafe@foreign).
--export([unsafePartial/1]).
+-export(['_unsafePartial'/1]).
 
-unsafePartial(F) -> F(unit).
+'_unsafePartial'(F) -> F(unit).

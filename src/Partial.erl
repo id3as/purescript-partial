@@ -1,8 +1,8 @@
 % module Partial
 -module(partial@foreign).
--export([crashWith/1]).
+-export(['_crashWith'/1]).
 
-crashWith(_) ->
+'_crashWith'(_) ->
   fun (Msg) ->
     erlang:error(Msg)
   end.
